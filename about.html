@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <title>About Us</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/smart-kitchen-logo.jpg" alt="logo" width="125px" />
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <img src="./assets/cart.png" alt="cart" width="30px" height="30px" />
+                </a>
+                <img src="./assets/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" />
+            </div>
+        </div>
+    </header>
+
+    <!------------ About Us ----------->
+    <header class="sub-header">
+        <h1 class="title">Who are we?</h1>
+        <section class="about-us">
+            <h2 class="about-us-head">Driving the force of assortment</h2>
+            <p class="about-us-text">For over a decade now, we’ve been empowering our users in discovering new tastes and experiences across countries. <br/> By putting together meticulous information for our users, we enable them to make an informed choice. </p>
+            <br/>
+            <h2 class="about-us-head">Focusing on Affordability</h2>
+            <p class="about-us-text">The benefits of providing an interesting choice are embodied by the success of Zomato Gold. <br/> We are leaving no stone unturned when it comes to making food more affordable without compromising on the profitability of a given restaurant.</p>
+            <br/>
+            <h2 class="about-us-head">Boosting Accessibility for customers</h2>
+            <p class="about-us-text">Our delivery service is reaching more and more cities. We are actively growing our services - table reservation, <br/> food@work for corporate catering and are continuing to power Feeding India.</p>
+            <br/>
+            <h2 class="about-us-head">Improving Quality of Food</h2>
+            <p class="about-us-text">We are committed to nurturing a neutral platform and are helping food establishments maintain high standards through Hyperpure. <br/> Food Hygiene Ratings is a coveted mark of quality among our restaurant partners.</p>
+        </section>
+    </header>
+
+    <!-------------About Us Content ----------->
+
+    <section class="video__footage__container">
+        <div class="video__footage">
+            <iframe src="https://www.youtube.com/embed/HKh-ItPc2fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+
+
+    <!-------------- footer -------------->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="./assets/play-store.png" alt="play-store" />
+                            <img src="./assets/app-store.png" alt="app-store" />
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="./assets/smart-kitchen-logo.jpg" />
+                        <p>
+                            Our purpose is to sustainably make the pleasure and benefits of the food accessible to the many
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p class="Copyright">Copyright</p>
+            </div>
+        </div>
+    </footer>
+    <!------------ js for toggle menu----------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

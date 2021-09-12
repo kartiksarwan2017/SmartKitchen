@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Product-details</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/smart-kitchen-logo.jpg" alt="logo" width="125px" />
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <img src="./assets/cart.png" alt="cart" width="30px" height="30px" />
+                </a>
+                <img src="./assets/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" />
+            </div>
+        </div>
+    </header>
+    <!------------ Single Product Details ------------->
+    <section>
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./assets/Product-1.png" width="100%" />
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="./assets/img4.png" width="100%" />
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./assets/img3.png" width="100%" />
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./assets/img2.png" width="100%" />
+                        </div>
+                        <div class="small-img-col">
+                            <img src="./assets/img1.png" width="100%" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <p>Home / Food-Products</p>
+                    <h1>6 Pc Nuggets + McChicken + Coke (M)</h1>
+                    <h4>&#8377; 242.00</h4>
+                    <select>
+              <option>Select Size</option>
+              <option>(L)</option>
+              <option>(M)</option>
+              <option>(R)</option>
+            </select>
+                    <input type="number" value="1" />
+                    <a href="" class="btn">Add To Cart</a>
+
+                    <h3>Product Details</h3>
+                    <!-- <i class="star">&#11088;</i> -->
+                    <br />
+                    <p>
+                        Tender and juicy chicken patty cooked to perfection, with creamy mayonnaise and crunchy lettuce adding flavour to each bite.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------- title ---------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Product</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+    <!---------- Products ---------->
+    <section>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="./assets/Product-9.jpg" alt="Product-9" />
+                    <h4>Dal Tadka Mix Veg Punjabi Meal</h4>
+                    <!-- <p>Mix veg Punjabi + rice + 2 butter roti</p> -->
+                    <div class="rating">
+                        <i class="star"> &#11088;</i>
+                        <i class="star"> &#11088;</i>
+                        <i class="star"> &#11088;</i>
+                        <i class="star"> &#11088;</i>
+                        <i class="star-o">&#9734;</i>
+                    </div>
+                    <p>&#8377; 229</p>
+                </div>
+                <div class="col-4">
+                    <img src="./assets/Product-10.jpg" alt="Product-10" />
+                    <h4>Paneer Tikka Masala Dal Makhani Meal</h4>
+                    <!-- <p>Paneer tikka masala + dal makhani + rice + 2 butter roti</p> -->
+                    <div class="rating">
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                    </div>
+                    <p>&#8377; 239</p>
+                </div>
+                <div class="col-4">
+                    <img src="./assets/Product-11.jpg" alt="Product-11" />
+                    <h4>Paneer 65 + Rice or Noodles Of Your Choice</h4>
+                    <div class="rating">
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                        <i class="star-o">&#9734;</i>
+                    </div>
+                    <p>&#8377; 205</p>
+                </div>
+                <div class="col-4">
+                    <img src="./assets/Product-12.jpg" alt="product-12" />
+                    <h4>Veg Hyderabadi Dum Biryani [1/2 Kg] Serves 1-2</h4>
+                    <div class="rating">
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                        <i class="star">&#11088;</i>
+                    </div>
+                    <p>&#8377; 345</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------- footer -------------->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="./assets/play-store.png" alt="play-store" />
+                            <img src="./assets/app-store.png" alt="app-store" />
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="./assets/smart-kitchen-logo.jpg" />
+                        <p>
+                            Our purpose is to sustainably make the pleasure and benefits of the food accessible to the many
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p class="Copyright">Copyright</p>
+            </div>
+        </div>
+    </footer>
+    <!------------ js for toggle menu----------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

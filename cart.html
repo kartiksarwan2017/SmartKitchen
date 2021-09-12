@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Cart-Items</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/smart-kitchen-logo.jpg" alt="logo" width="125px" />
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <img src="./assets/cart.png" alt="cart" width="30px" height="30px" />
+                </a>
+                <img src="./assets/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" />
+            </div>
+        </div>
+    </header>
+
+    <!------------ Cart Items Details ------------->
+    <section>
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./assets/Product-4.png" alt="product-1" />
+                            <div>
+                                <p>
+                                    McSpicy Paneer + American Cheese Supreme <br />+ McVeggie + Veg Maharaja + 3 Fries (L)
+                                </p>
+                                <small>Price: &#8377; 857.00</small>
+                                <br />
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" /></td>
+                    <td>&#8377; 857.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./assets/Product-2.png" alt="product-1" />
+                            <div>
+                                <p>McAloo Tikki + Veg Pizza McPuff + Coke (M)</p>
+                                <small>Price: &#8377; 125.00</small>
+                                <br />
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" /></td>
+                    <td>&#8377; 125.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./assets/Product-7.jpg" alt="product-1" />
+                            <div>
+                                <p>Double Paneer Supreme</p>
+                                <small>Price: &#8377; 369.00</small>
+                                <br />
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" /></td>
+                    <td>&#8377; 369.00</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>&#8377; 1351.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>&#8377; 70.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>&#8377; 1421.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-------------- footer -------------->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="./assets/play-store.png" alt="play-store" />
+                            <img src="./assets/app-store.png" alt="app-store" />
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="./assets/smart-kitchen-logo.jpg" />
+                        <p>
+                            Our purpose is to sustainably make the pleasure and benefits of the food accessible to the many
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p class="Copyright">Copyright</p>
+            </div>
+        </div>
+    </footer>
+    <!------------ js for toggle menu----------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
