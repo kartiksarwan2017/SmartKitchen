@@ -546,6 +546,10 @@ th:last-child {
     text-align: right;
 }
 
+.small-container .btn {
+    margin-left: 820px;
+}
+
 
 /* -------------- About Us Page ----------------- */
 
