@@ -257,6 +257,13 @@ small {
     color: #555;
 }
 
+.offer #button_2 {
+    position: relative;
+    left: 60px;
+    right: 280px;
+    padding: 0;
+}
+
 
 /* ----------- testimonial ----------- */
 
@@ -546,8 +553,9 @@ th:last-child {
     text-align: right;
 }
 
-.small-container .btn {
-    margin-left: 820px;
+.small-container .primary_button {
+    position: relative;
+    left: 820px;
 }
 
 
