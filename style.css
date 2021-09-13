@@ -775,4 +775,24 @@ form a {
         font-size: 10px;
         padding: 60px 0 20px;
     }
+    table {
+        overflow-x: hidden;
+    }
+    td {
+        padding: 10px 5px;
+    }
+    td input {
+        width: 50px;
+        height: 25px;
+        padding: 10px;
+        border-radius: 1.5px;
+    }
+    .small-container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .small-container .btn {
+        margin-left: -720px;
+        margin-right: none;
+    }
 }

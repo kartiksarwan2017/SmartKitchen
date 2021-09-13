@@ -366,4 +366,25 @@ ul {
         flex-basis: 80%;
         margin-bottom: 30px;
     }
+    .container .card-container {
+        width: 90%;
+    }
+    .container .form {
+        width: fit-content;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .container .form .inputBox {
+        margin-top: 20px;
+    }
+    .container .form .inputBox span {
+        margin-top: 20px;
+    }
+    .container .form .inputBox input {
+        margin-top: 25px;
+    }
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 }
