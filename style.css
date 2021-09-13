@@ -791,8 +791,4 @@ form a {
         max-width: 100%;
         overflow-x: hidden;
     }
-    .small-container .btn {
-        margin-left: -720px;
-        margin-right: none;
-    }
 }
