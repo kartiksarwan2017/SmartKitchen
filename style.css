@@ -791,4 +791,7 @@ form a {
         max-width: 100%;
         overflow-x: hidden;
     }
+    .cart-page .btn {
+        margin-left: -720px;
+    }
 }
